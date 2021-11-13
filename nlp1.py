@@ -294,7 +294,8 @@ def test_logistic_regression(test_x, test_y, freqs, theta):
         theta: weight vector of dimension (3, 1)
     Output: 
         accuracy: (# of tweets classified correctly) / (total # of tweets)
-    """    
+    """     
+    
     y_hat = []
     for tweet in test_x:
         y_pred = predict_tweet(tweet, freqs, theta)
